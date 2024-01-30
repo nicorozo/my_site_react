@@ -1,7 +1,21 @@
 .navbar{
     background-color: white;
+    height: 80px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.navbar_logo img{
-    width: 100px;
-    height: 100px;
+
+.logo{
+    height: 50%;
+}
+.navbar_menu {    
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: black;
+}
+.navbar_contact-btn{
+
 }
