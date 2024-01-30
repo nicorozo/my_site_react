@@ -1,0 +1,31 @@
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+.hero_left{
+    flex: 1;
+    text-align: left;
+    gap: 12rem;
+}
+.hero_action-div{
+    display: flex;
+    gap: 2rem;
+}
+.hero_btn{
+    width: 9rem;
+    justify-content: center;
+    text-align: end;
+}
+.hero_btn.blue{
+    background-color: var(--blue-button);
+    color: white;
+}
+.hero_right{
+    flex: 1.5;
+    height: 100%
+}
+.hero_right img{
+width: 80%;
+}

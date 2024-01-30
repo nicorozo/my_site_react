@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgb(0, 0, 0);
-  background-color: #FAFAFA;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -35,40 +35,8 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 16px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: var(--green-button);
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-.secondary-btn{
-  border-radius: 16px;
-  border: 2px solid var(--blue-button);
-  padding: .8rem 3rem;
-  color: var(--blue-button);
-  font-size: 1rem;
-  font-weight: 600;
-  font-size: .8rem;
-  font-family: inherit;
-  background-color: transparent;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  font-size: 5rem;
+  line-height: 80px;
 }
 
 /* @media (prefers-color-scheme: light) {
