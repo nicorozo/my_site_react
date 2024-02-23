@@ -1,0 +1,13 @@
+.process-container{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    border: 2px black solid;
+    border-radius: 32px;
+}
+.process-rail{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
