@@ -3,16 +3,30 @@ import { data } from "./processData.js";
 import "./Process.css";
 import { useState } from "react";
 
-function ProcessCard({card,onSelectorClick}) {
+function ProcessCard({card}) {
+
+  const [isActive, setIsActive] = useState(false);
+
+  /* item is a default prop, same as "this" */
+  function activeWindow(item,index){
+    item.stopPropagation()
+    // 👇️ toggle isActive state on click
+    setIsActive(current => !current);
+    card.isActive = !card.isActive
+
+  console.log(item)
+  console.log(index)
+
+}
 
   return (
     
             <div className="process-card" key={card.id}>
-              <div className="process-card-selector-div" onClick={onSelectorClick}>
+              <div className="process-card-selector-div" onClick={activeWindow}>
                 <span className="process-selector-number">0{card.id}</span>
                 <h3>{card.name}</h3>
               </div>
-              <div className="process-card-content">
+              <div className={`process-card-content ${card.isActive ? 'active' : '' }`}>
                 <div className="process-card-img"></div>
                 <div className="process-card-text">
                   <h3>{card.header}</h3>
@@ -24,12 +38,7 @@ function ProcessCard({card,onSelectorClick}) {
 }
 
 function Process() {
-  const [activeSelector,setActiveSelector] = useState(0)
-  
-  function activeWindow(item,index){
-  console.log(item)
-  console.log(index)
-}
+
 
   return (
     <div>
@@ -44,11 +53,9 @@ function Process() {
       <div className="process-rail">
           <ProcessCard 
           card={data[0]}
-          onSelectorClick={activeWindow}
           />
           <ProcessCard 
           card={data[1]}
-          onSelectorClick={activeWindow}
           />
           </div>
       </div>
