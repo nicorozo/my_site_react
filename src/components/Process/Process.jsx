@@ -5,35 +5,39 @@ import { useState } from "react";
 
 function ProcessCard({card}) {
 
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(card.isActive);
+
+  
 
   /* item is a default prop, same as "this" */
-  function activeWindow(item,index){
-    item.stopPropagation()
-    // 👇️ toggle isActive state on click
-    setIsActive(current => !current);
-    card.isActive = !card.isActive
+  function activeWindow(e){
+    e.preventDefault()
+    e.stopPropagation()
 
-  console.log(item)
-  console.log(index)
+    // 👇️ toggle isActive state on click
+    setIsActive(!isActive);
+    card.isActive = isActive
+    
+
+  console.log(isActive)
 
 }
 
   return (
     
-            <div className="process-card" key={card.id}>
-              <div className="process-card-selector-div" onClick={activeWindow}>
+            <button className="process-card" key={card.id} onClick={activeWindow}>
+              <div className="process-card-selector-div" >
                 <span className="process-selector-number">0{card.id}</span>
                 <h3>{card.name}</h3>
               </div>
-              <div className={`process-card-content ${card.isActive ? 'active' : '' }`}>
+              <div className={`process-card-content ${isActive ? 'active' : '' }`}>
                 <div className="process-card-img"></div>
                 <div className="process-card-text">
                   <h3>{card.header}</h3>
                   <p>{card.text}</p>
                 </div>
               </div>
-            </div>
+            </button>
   )
 }
 

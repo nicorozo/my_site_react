@@ -4,6 +4,7 @@
     width: 100%;
     border: 2px black solid;
     border-radius: 32px;
+    overflow: hidden;
 }
 .process-rail{
     display: flex;
@@ -13,6 +14,9 @@
 }
 .process-card{
     display: flex;
+    background-color: black;
+    color: white;
+    border-radius: 0;
 }
 .process-card-content{
     display: none;
@@ -21,6 +25,7 @@
     display: flex;
 }
 .process-card-selector-div h3{
+    display: flex;
     writing-mode: vertical-lr;
     text-orientation: sideways-right;
     transform: rotate(180deg)
