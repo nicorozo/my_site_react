@@ -3,34 +3,15 @@ import { data } from "./processData.js";
 import "./Process.css";
 import { useState } from "react";
 
-function ProcessCard({card}) {
-
-  const [isActive, setIsActive] = useState(card.isActive);
-
-  
-
-  /* item is a default prop, same as "this" */
-  function activeWindow(e){
-    e.preventDefault()
-    e.stopPropagation()
-
-    // 👇️ toggle isActive state on click
-    setIsActive(!isActive);
-    card.isActive = isActive
-    
-
-  console.log(isActive)
-
-}
+function ProcessCard({card,isOpen,onClick}) {
 
   return (
-    
-            <button className="process-card" key={card.id} onClick={activeWindow}>
+            <button className={`process-card ${isOpen ? 'active' : '' }`} key={card.id} onClick={onClick} >
               <div className="process-card-selector-div" >
                 <span className="process-selector-number">0{card.id}</span>
                 <h3>{card.name}</h3>
               </div>
-              <div className={`process-card-content ${isActive ? 'active' : '' }`}>
+              <div className={`process-card-content ${isOpen ? 'active' : '' }`}>
                 <div className="process-card-img"></div>
                 <div className="process-card-text">
                   <h3>{card.header}</h3>
@@ -43,6 +24,14 @@ function ProcessCard({card}) {
 
 function Process() {
 
+  const [openedProcessId,setOpenedProcessId] = useState(1)
+
+  function onOpen(id){
+    
+    setOpenedProcessId(id)
+    console.log(openedProcessId)
+
+  }
 
   return (
     <div>
@@ -55,12 +44,14 @@ function Process() {
       </div>
       <div className="process-container">
       <div className="process-rail">
-          <ProcessCard 
-          card={data[0]}
-          />
-          <ProcessCard 
-          card={data[1]}
-          />
+          {data.map((card)=> 
+
+            <ProcessCard key={card.id} 
+            card={card} 
+            isOpen={openedProcessId === card.id}
+            onClick={()=> onOpen(card.id)} 
+            />
+          )}
           </div>
       </div>
     </div>

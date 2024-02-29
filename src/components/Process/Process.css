@@ -17,12 +17,22 @@
     background-color: black;
     color: white;
     border-radius: 0;
+    padding: 0;
+}
+.process-card.active{
+    background-color: white;
+    color: black;
 }
 .process-card-content{
     display: none;
 }
 .process-card-content.active{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: black;
+    background-color: white;
 }
 .process-card-selector-div h3{
     display: flex;
