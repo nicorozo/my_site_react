@@ -47,6 +47,9 @@ h2{
   font-weight: 400;
   font-size: 36px;
 }
+.spacer{
+  height: 100px;
+}
 
 /* @media (prefers-color-scheme: light) {
   :root {

@@ -12,7 +12,6 @@ function Process() {
   function onOpen(id){
     
     setOpenedProcessId(id)
-    console.log(openedProcessId)
 
   }
 

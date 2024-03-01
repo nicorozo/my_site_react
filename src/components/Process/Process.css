@@ -26,7 +26,7 @@
     border-top: 0px;
     border-bottom: 0px;
     border-color: white;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
 }
 .process-card.active{
     background-color: white;
@@ -43,6 +43,8 @@
     height: 100%;
     color: black;
     background-color: white;
+    padding: 2rem;
+    gap: 2rem;
 }
 .process-card-selector-div{
     display: flex;
@@ -68,4 +70,13 @@
     text-orientation: sideways-right;
     transform: rotate(180deg)
     
+}
+
+.process-card-text h3{
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: left;
+}
+.process-card-text p{
+    text-align: justify;
 }
