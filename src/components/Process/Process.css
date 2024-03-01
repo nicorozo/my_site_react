@@ -1,6 +1,6 @@
 .process-container{
     display: flex;
-    height: 600px;
+    height: 720px;
     width: 100%;
     border: 2px black solid;
     border-radius: 32px;
@@ -12,17 +12,27 @@
     height: 100%;
     width: 100%;
 }
+.process-card:nth-child(1){
+    border-left: 10px;
+}
+.process-card:nth-child(4){
+    border-right: 10px;
+}
 .process-card{
     display: flex;
-    background-color: black;
+    background-color: #000c1d;
     color: white;
     border-radius: 0;
-    padding: 0;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-color: white;
+    padding: 2rem 1rem;
 }
 .process-card.active{
     background-color: white;
     color: black;
 }
+
 .process-card-content{
     display: none;
 }
@@ -34,9 +44,28 @@
     color: black;
     background-color: white;
 }
+.process-card-selector-div{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+.process-card-selector-div span{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+}
 .process-card-selector-div h3{
     display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    flex: 1;
     writing-mode: vertical-lr;
     text-orientation: sideways-right;
     transform: rotate(180deg)
+    
 }

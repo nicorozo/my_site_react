@@ -1,8 +1,8 @@
 #root {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
   text-align: center;
-  width: 98%;
+  width: 100%;
 }
 .app{
   padding: 0 4rem;
