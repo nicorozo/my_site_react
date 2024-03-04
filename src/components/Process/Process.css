@@ -20,17 +20,22 @@
 }
 .process-card{
     display: flex;
-    background-color: #000c1d;
+    background-color: var(--dark-blue);
     color: white;
     border-radius: 0;
     border-top: 0px;
     border-bottom: 0px;
     border-color: white;
     padding: 2rem 1.5rem;
+    transition:background 200ms ease-in;
+}
+.process-card:hover{
+    background-color: var(--green-button);
 }
 .process-card.active{
     background-color: white;
     color: black;
+    
 }
 
 .process-card-content{
@@ -45,13 +50,13 @@
     background-color: white;
     padding: 2rem;
     gap: 2rem;
+   
 }
 .process-card-selector-div{
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
-    
 
 }
 .process-card-selector-div span{

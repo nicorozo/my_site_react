@@ -2,7 +2,7 @@ import './HalfAction.css'
 const HalfAction = () => {
   return (
     <div className='half-container'>
-        <video src="IntroTest.mp4"  loop muted className='half-video'>
+        <video src="IntroTest.mp4" autoPlay loop muted className='half-video'>
         </video>
         <div className="half-text-div">
             <h3>Medium length heading goes here</h3>

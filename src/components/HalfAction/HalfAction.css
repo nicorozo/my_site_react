@@ -37,6 +37,6 @@
 .half-button.info{
     background-color: black;
     color: var(--green-button);
-    border: 1px solid var(--green-button);
+    border: 2px solid var(--green-button);
     border-radius: 2rem;
 }
