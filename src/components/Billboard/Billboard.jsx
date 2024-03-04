@@ -1,4 +1,5 @@
 import './Billboard.css'
+import CircleText from './CircleText'
 import PictureBillboard from './PictureBillboard'
 
 const Billboard = () => {
@@ -6,7 +7,10 @@ const Billboard = () => {
     <div className='billboard-container'>
         <div className="billboard-upper-div">
             <div className="billboard-wheel-container">
-                <img src="spinner.svg" alt="spinner" />
+                <CircleText
+                text={'React text for Circle * React text for Circle *'}
+                />
+                <span>About Us</span>
             </div>
             <div className="billboard-text">
                 <h3>Short heading goes here</h3>

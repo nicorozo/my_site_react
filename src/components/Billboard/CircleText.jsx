@@ -1,21 +1,24 @@
-import CircleType from 'circletype';
+import ReactCurvedText from 'react-curved-text';
 
-const CircleText = () => {
-    // Instantiate `CircleType` with an HTML element.
-const circleType = new CircleType(document.getElementById('myElement'));
+const CircleText = ({text}) => {
 
-// Set the text radius and direction. Note: setter methods are chainable.
-circleType.radius(200).dir(-1);
-
-// Provide your own splitter function to handle emojis
-// @see https://github.com/orling/grapheme-splitter
-const splitter = new GraphemeSplitter()
-new CircleType(
-  document.getElementById('myElement'),
-  splitter.splitGraphemes.bind(splitter)
-);
   return (
-    <div>CircleText</div>
+    <ReactCurvedText width={300}
+      height={300}
+      cx='163'
+      cy='163'
+      rx={100}
+      ry={100}
+      startOffset='0'
+      reversed={true}
+      text={text}
+      textProps={{"style": {"fontSize": "28px","fontWeight":"500", 'fill':'var(--green-button)'}}}
+      textPathProps={null}
+      tspanProps={null}
+      ellipseProps={null}
+      svgProps={null}
+       />
+      
   )
 }
 
