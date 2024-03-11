@@ -26,8 +26,17 @@
 .services-content-container{
     display: flex;
     width: 100%;
+    gap: (var(--my-gap));
 }
 .services-column{
     display: flex;
+    flex-direction: column;
     width: 100%;
+    gap: var(--my-gap);
+}
+.services-column-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: (var(--my-gap));
 }

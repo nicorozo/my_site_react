@@ -1,18 +1,10 @@
 import "./ServicesCard.css";
 
-const ServicesCard = ({ image }) => {
+const ServicesCard = ({ setImage, classImage, children }) => {
   return (
     <div className="services-card-container">
-      <img src={image} alt={image} />
-      <div className="services-card-text-container">
-        <h4>Tagline</h4>
-        <h3>Medium length section heading goes here</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros elementum tristique.
-        </p>
-        <button className="services-card-button">Button</button>
-      </div>
+      <img className={classImage} src={setImage} alt={setImage} />
+      {children}
     </div>
   );
 };

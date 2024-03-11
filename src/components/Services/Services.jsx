@@ -1,5 +1,6 @@
 import "./Services.css";
 import ServicesCard from "./ServicesCard";
+import ServicesCardText from "./ServicesCardText";
 
 const Services = () => {
   return (
@@ -10,10 +11,56 @@ const Services = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div className="services-content-container">
+          {/* 
+                FIRST COLUMN
+            */}
           <div className="services-column">
-            <ServicesCard setImage={"card-picture1.jpg"} />
+            <ServicesCard setImage={"card-picture1.jpg"} classImage={"first"}>
+              <ServicesCardText
+                color={"yellow"}
+                tagline={"tagline"}
+                headline={"headline"}
+                text={
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+                }
+              ></ServicesCardText>
+            </ServicesCard>
+            {/* 
+            white div now 
+            */}
+            <ServicesCardText
+              tagline={"tagline"}
+              headline={"headline"}
+              text={"sometext"}
+            ></ServicesCardText>
           </div>
-          <div className="services-column"></div>
+          {/* 
+            SECOND COLUMN
+          */}
+          <div className="services-column">
+            <div className="services-column-div">
+              <ServicesCardText
+                tagline={"tagline"}
+                headline={"headline"}
+                text={"sometext"}
+              ></ServicesCardText>
+              <ServicesCardText
+                tagline={"tagline"}
+                headline={"headline"}
+                text={"sometext"}
+              ></ServicesCardText>
+            </div>
+            <ServicesCard setImage={"card-picture2.jpg"} classImage={"first"}>
+              <ServicesCardText
+                color={"yellow"}
+                tagline={"tagline 2"}
+                headline={"headline 2"}
+                text={
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+                }
+              ></ServicesCardText>
+            </ServicesCard>
+          </div>
         </div>
       </div>
     </div>

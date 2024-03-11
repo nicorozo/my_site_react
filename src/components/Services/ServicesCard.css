@@ -6,12 +6,11 @@
 
 }
 .services-card-container img{
+    height: 300px;
     width: 100%;
-    object-fit: contain;
 }
-.services-card-text-container{
-    display: flex;
-    flex-direction: column;
-    background: var(--green-gradient);
+.services-card-container .first{
+    object-fit: cover;
+    object-position: 0 -140px;
 
 }
