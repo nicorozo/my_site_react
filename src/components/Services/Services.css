@@ -1,7 +1,6 @@
 .services-container{
     display: flex;
     max-width: 100%;
-    height: 1340px;
     background-color: black;
     border-radius: 32px;
     padding: 2rem;
@@ -26,17 +25,18 @@
 .services-content-container{
     display: flex;
     width: 100%;
-    gap: (var(--my-gap));
+    gap: var(--my-gap);
 }
 .services-column{
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: var(--my-gap);
+    box-sizing: border-box;
 }
 .services-column-div{
     display: flex;
+    width: 100%;
     flex-direction: row;
-    justify-content: space-between;
-    gap: (var(--my-gap));
+    gap: var(--my-gap);
 }

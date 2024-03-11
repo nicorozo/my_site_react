@@ -29,6 +29,7 @@ const Services = () => {
             white div now 
             */}
             <ServicesCardText
+              color={"white"}
               tagline={"tagline"}
               headline={"headline"}
               text={"sometext"}
@@ -40,11 +41,13 @@ const Services = () => {
           <div className="services-column">
             <div className="services-column-div">
               <ServicesCardText
+                color={"white"}
                 tagline={"tagline"}
                 headline={"headline"}
                 text={"sometext"}
               ></ServicesCardText>
               <ServicesCardText
+                color={"white"}
                 tagline={"tagline"}
                 headline={"headline"}
                 text={"sometext"}
