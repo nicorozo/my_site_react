@@ -1,0 +1,12 @@
+.modal{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vh;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+.modal.active{
+    display: flex;
+}

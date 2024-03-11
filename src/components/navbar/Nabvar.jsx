@@ -1,8 +1,17 @@
+import { useState } from 'react';
 import './Nabvar.css'
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoClose } from "react-icons/io5";
 
 
 const Nabvar = () => {
+
+  const [isMenuOpen,  setIsMenuOpen] = useState(false)
+  
+  function openMenu(){
+    setIsMenuOpen(isMenuOpen => !isMenuOpen)
+  }
+
   return (
     <header className='navbar'>
         <a className="navbar-logo-container" href="index.html">
@@ -22,8 +31,8 @@ const Nabvar = () => {
         <button className='navbar_contact-btn secondary-btn'>Contact</button>
         </div>
         {/* Mobile */}
-        <button className='navbar-mobile-menu-btn'>
-          <RxHamburgerMenu/>
+        <button className='navbar-mobile-menu-btn' onClick={openMenu}>
+          {isMenuOpen? <RxHamburgerMenu /> : <IoClose />}
         </button>
     </header>
   )

@@ -1,0 +1,17 @@
+.services-card-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+
+}
+.services-card-container img{
+    width: 100%;
+    object-fit: contain;
+}
+.services-card-text-container{
+    display: flex;
+    flex-direction: column;
+    background: var(--green-gradient);
+
+}

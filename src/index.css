@@ -7,6 +7,7 @@
   --green-button:rgba(180, 225, 0, 1) ;
   --blue-button:rgba(0, 42, 103, 1) ;
   --dark-blue:#000c1d;
+  --green-gradient:linear-gradient(#B4E100, #E1CA00);
 
   color-scheme: light dark;
   color: rgb(0, 0, 0);

@@ -1,0 +1,33 @@
+.services-container{
+    display: flex;
+    max-width: 100%;
+    height: 1340px;
+    background-color: black;
+    border-radius: 32px;
+    padding: 2rem;
+}
+.services-inner-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+    gap: 1rem;
+}
+.services-heading{
+    text-align: center;
+    color: white;
+}
+.services-heading h3{
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0;
+}
+.services-content-container{
+    display: flex;
+    width: 100%;
+}
+.services-column{
+    display: flex;
+    width: 100%;
+}
