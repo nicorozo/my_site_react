@@ -1,6 +1,7 @@
 import Nabvar from "../components/navbar/Nabvar";
 import Logo from "../components/navbar/Logo";
-import { Hero } from "../components/Hero/Hero";
+import Hero from "../components/Hero/Hero";
+import { FaArrowCircleRight } from "react-icons/fa";
 import AutoplayCarousel from "../components/Carousel/AutoplayCarousel";
 import Process from "../components/Process/Process";
 import HalfAction from "../components/HalfAction/HalfAction";
@@ -10,17 +11,32 @@ import "./App.css";
 import Footer from "../components/Footer/Footer";
 import Services from "../components/Services/Services";
 import NavbarMenu from "../components/navbar/NavbarMenu";
-import NavbarButton from "./NavbarButton";
+import NavbarButton from "../components/navbar/NavbarButton";
 
 function App() {
   return (
     <div className="app">
+      <div className="hero-background home"></div>
       <Nabvar>
         <Logo />
         <NavbarMenu />
         <NavbarButton />
       </Nabvar>
-      <Hero />
+      <Hero>
+        <div className="hero-text-div">
+          <h1>From creatives to creatives</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique.{" "}
+          </p>
+          <div className="hero-action-div">
+            <button className="hero-btn blue">
+              Button <FaArrowCircleRight />
+            </button>
+            <button className="hero-btn">Button</button>
+          </div>
+        </div>
+      </Hero>
       <h2 className="h2-light">Used by the world's most average companies</h2>
       <AutoplayCarousel></AutoplayCarousel>
       <Process />

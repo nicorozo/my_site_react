@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./pages/App.jsx";
-import ServicesPage from "./pages/ServicesPage.jsx";
+import ServicesPage from "./pages/Services/ServicesPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 

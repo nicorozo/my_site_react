@@ -2,30 +2,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
+    min-height: 90vh;
 }
-.hero_left{
-    flex: 1;
-    text-align: left;
-    gap: 12rem;
+
+.hero-text-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
-.hero_action-div{
+
+.hero-action-div{
     display: flex;
     gap: 2rem;
 }
-.hero_btn{
+.hero-btn{
     width: 9rem;
     justify-content: center;
     text-align: end;
 }
-.hero_btn.blue{
+.hero-btn.blue{
     background-color: var(--blue-button);
     color: white;
-}
-.hero_right{
-    flex: 1.5;
-    height: 100%
-}
-.hero_right img{
-width: 80%;
 }

@@ -1,0 +1,21 @@
+.ser-card-container{
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    background-color: black;
+    border-radius: 32px;
+    align-items: center;
+    text-align: left;
+    color: white;
+    margin: 3rem 0;
+    gap: 3rem;
+}
+.ser-card{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.ser-headline{
+    margin: 0;
+    font-size: 48px;
+}

@@ -7,6 +7,20 @@
 .app{
   padding: 0 4rem;
 }
+.hero-background{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-background.home{
+  background-image: url(heroImg.png);
+}
 /* Buttons */
 button {
   border-radius: 16px;
