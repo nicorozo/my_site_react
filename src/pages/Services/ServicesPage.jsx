@@ -8,6 +8,11 @@ import {
 } from "./components/ServicesCards/ServicesCard";
 import "../App.css";
 import "./ServicesPage.css";
+import {
+  ArrowsModule,
+  ArrowsSquare,
+} from "./components/ServicesArrowsModule/ArrowsModule";
+import Footer from "../../components/Footer/Footer";
 
 const ServicesPage = () => {
   return (
@@ -84,6 +89,78 @@ const ServicesPage = () => {
           headline={"Medium length section heading goes here"}
         />
       </ServicesCard>
+      <ServicesCard>
+        <ServicesCardHeading
+          tagline={"headline"}
+          headline={"Medium length section heading goes here"}
+        />
+        <ServicesCardContent>
+          <p className="ser-card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique. Duis cursus, mi quis
+            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+            vitae erat.
+          </p>
+          <ul className="ser-card-ul">
+            <li className="ser-card-li">First item</li>
+            <li className="ser-card-li">Second item</li>
+            <li className="ser-card-li">Third item</li>
+          </ul>
+          <button className="ser-card-button">Button</button>
+        </ServicesCardContent>
+      </ServicesCard>
+      <div className="ser-heading-div">
+        <h3>Medium length section heading goes here</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+        </p>
+      </div>
+      <ArrowsModule>
+        <div className="ser-arrows-column">
+          <ArrowsSquare
+            headline={"Short heading goes here"}
+            text={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+            }
+            icon={"vite.svg"}
+          />
+          <ArrowsSquare
+            headline={"Short heading goes here"}
+            text={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+            }
+            icon={"vite.svg"}
+          />
+        </div>
+        {/* Arrows */}
+        <div className="ser-arrows-colum">
+          <img
+            className="ser-arrows-img"
+            src="arrows.png"
+            alt="arrows picture"
+          />
+        </div>
+        <div className="ser-arrows-column">
+          <ArrowsSquare
+            headline={"Short heading goes here"}
+            text={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+            }
+            icon={"vite.svg"}
+          />
+          <ArrowsSquare
+            headline={"Short heading goes here"}
+            text={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+            }
+            icon={"vite.svg"}
+          />
+        </div>
+      </ArrowsModule>
+      <div className="spacer"></div>
+      <Footer></Footer>
     </div>
   );
 };

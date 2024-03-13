@@ -9,6 +9,7 @@
     color: white;
     margin: 3rem 0;
     gap: 3rem;
+    box-sizing: border-box;
 }
 .ser-card{
     display: flex;
@@ -18,4 +19,16 @@
 .ser-headline{
     margin: 0;
     font-size: 48px;
+}
+.ser-heading-div{
+    display: flex;
+    margin: 0 auto;
+    max-width: 50%;
+    flex-direction: column;
+    text-align: center;
+    margin: 4rem auto;
+}
+.ser-heading-div h3{
+    font-size: 48px;
+    margin: 0;
 }

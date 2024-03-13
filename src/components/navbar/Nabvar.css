@@ -16,9 +16,10 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    color: black;
+    
 }
-.navbar_contact-btn{
+.navbar_menu a{
+    color: white;
 
 }
 .navbar-mobile-menu-btn{
