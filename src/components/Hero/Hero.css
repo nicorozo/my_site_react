@@ -26,3 +26,10 @@
     background-color: var(--blue-button);
     color: white;
 }
+
+@media only screen and (max-width:400px) {
+    .hero-text-div h1{
+        font-size: 10vw;
+        line-height: normal;
+    }
+}

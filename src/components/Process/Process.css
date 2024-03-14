@@ -1,3 +1,10 @@
+.process-headline-container{
+    margin: 4rem auto;
+}
+.process-h2{
+    margin: 0;
+}
+
 .process-container{
     display: flex;
     height: 720px;

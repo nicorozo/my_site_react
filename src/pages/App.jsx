@@ -24,7 +24,7 @@ function App() {
       </Nabvar>
       <Hero>
         <div className="hero-text-div">
-          <h1>From creatives to creatives</h1>
+          <h1>We create your Websites</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique.{" "}
@@ -39,6 +39,13 @@ function App() {
       </Hero>
       <h2 className="h2-light">Used by the world's most average companies</h2>
       <AutoplayCarousel></AutoplayCarousel>
+      <div className="process-headline-container">
+        <h2 className="process-h2">Process</h2>
+        <p className="process-sub-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+          fuga distinctio molestias laboriosam cum esse!
+        </p>
+      </div>
       <Process />
       <div className="spacer"></div>
       <HalfAction />

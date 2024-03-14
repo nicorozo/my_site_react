@@ -7,7 +7,9 @@
     justify-content: space-between;
 }
 .navbar-logo-container{
+    display: flex;
     height: 100%;
+    align-items: center;
 }
 .logo{
     height: 100%;
@@ -21,6 +23,9 @@
 .navbar_menu a{
     color: white;
 
+}
+.navbar_contact-btn{
+    
 }
 .navbar-mobile-menu-btn{
     display: none;

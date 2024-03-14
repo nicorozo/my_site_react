@@ -44,6 +44,9 @@
         animation-play-state: paused;
     }
   }
+  .carousel-track.mobile{
+    display: none;
+  }
 
   @keyframes slide {
     0% {
@@ -53,3 +56,11 @@
       left: -100%;
     }
   }
+  @media only screen and (max-width:400px) {
+    .carousel-track{
+        display: none;
+    }
+    .carousel-track.mobile{
+      display: flex;
+    }
+}

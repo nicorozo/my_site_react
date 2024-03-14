@@ -32,7 +32,7 @@
     flex-direction: column;
     width: 100%;
     gap: var(--my-gap);
-    box-sizing: border-box;
+
 }
 .services-column-div{
     display: flex;
