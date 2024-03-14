@@ -59,6 +59,9 @@
     gap: 2rem;
    
 }
+.process-card-img{
+    max-width: 100%;
+}
 .process-card-selector-div{
     display: flex;
     height: 100%;
@@ -91,4 +94,34 @@
 }
 .process-card-text p{
     text-align: justify;
+}
+@media only screen and (max-width:800px) {
+    .process-container{
+        height: 100%;
+    }
+    .process-rail{
+        flex-direction: column;
+    }
+    .process-card{flex-direction: column;}
+    .process-card-selector-div{
+        flex-direction: row;
+        height: 2vh;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .process-card-selector-div h3{
+        writing-mode: horizontal-tb;
+        text-orientation: unset;
+        transform: rotate(0deg);
+        height: auto;
+        flex-direction: row-reverse;
+    }
+    .process-card-content.active{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .process-card{
+        border: 0px;
+    }
 }
