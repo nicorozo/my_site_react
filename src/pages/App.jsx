@@ -52,7 +52,7 @@ function App() {
       <div className="spacer"></div>
       <Services />
       <div className="spacer"></div>
-      <Billboard />
+      {/*  <Billboard /> */}
       <div className="spacer"></div>
       <Footer />
     </div>

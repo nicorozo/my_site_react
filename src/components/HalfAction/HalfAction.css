@@ -4,6 +4,7 @@
     height: 380px;
     border-radius: 2rem;
     background-color: black;
+    overflow: hidden;
 }
 .half-video{
     width: 100%;
@@ -39,4 +40,25 @@
     color: var(--green-button);
     border: 2px solid var(--green-button);
     border-radius: 2rem;
+}
+@media screen and (max-width: 500px) {
+    .half-container{
+        height: auto;
+        flex-direction: column;
+        justify-content: end;
+        position: relative;
+
+    }
+    .half-text-div{
+        position: unset;
+    }
+    .half-text-div h3{
+        font-size: 3rem;
+    }
+    .half-text-div p{
+        display: none;
+    }
+    .half-button{
+        padding: 0.5rem 1rem ;
+    }
 }

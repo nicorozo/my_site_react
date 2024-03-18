@@ -4,7 +4,7 @@
 .carousel-absolute{
   position: absolute;
   left: 0;
-  width: 100vw;
+  width: 98vw;
 }
 
 .carousel-container {
@@ -56,7 +56,7 @@
       left: -100%;
     }
   }
-  @media only screen and (max-width:400px) {
+  @media only screen and (max-width:800px) {
     .carousel-track{
         display: none;
     }
