@@ -41,6 +41,10 @@ export default function AutoplayCarousel() {
               );
             })}
           </div>
+          {/* 
+          Mobile version
+          
+          */}
           <div className="carousel-track mobile">
             {Object.keys(arrayIcons).map((detailKey) => {
               return (
