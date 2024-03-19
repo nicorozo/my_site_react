@@ -29,3 +29,8 @@
 .ser-arrows-img{
     height: 500px;
 }
+@media screen and (max-width:800px) {
+    .ser-arrows-container{
+        display: none;
+    }
+}

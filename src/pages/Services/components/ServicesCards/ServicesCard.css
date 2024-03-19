@@ -32,3 +32,8 @@
     font-size: 48px;
     margin: 0;
 }
+@media screen and (max-width:800px) {
+    .ser-card-container{
+        flex-direction: column;
+    }
+}

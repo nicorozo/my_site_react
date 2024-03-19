@@ -30,6 +30,9 @@
 .navbar-mobile-menu-btn{
     display: none;
 }
+.navbar-closing-btn{
+    z-index: 99;
+}
 @media only screen and (max-width: 800px) {
     .navbar{
        height: 10vh;

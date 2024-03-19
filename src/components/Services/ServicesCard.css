@@ -11,6 +11,12 @@
 }
 .services-card-container .first{
     object-fit: cover;
-    object-position: 0 -140px;
+    object-position: 0 ;
 
+}
+@media screen and (max-width:800px) {
+    .services-card-container .first{
+        object-fit: cover;
+        object-position: 0 0px;
+    }
 }

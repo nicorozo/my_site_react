@@ -39,7 +39,7 @@ const Services = () => {
             SECOND COLUMN
           */}
           <div className="services-column">
-            <div className="services-column-div">
+            <div className="services-column-div mobile">
               <ServicesCardText
                 color={"white"}
                 tagline={"tagline"}

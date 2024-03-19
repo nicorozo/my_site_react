@@ -40,3 +40,11 @@
     flex-direction: row;
     gap: var(--my-gap);
 }
+@media screen  and (max-width: 500px) {
+    .services-content-container{
+        flex-direction: column;
+    }
+    .services-column-div.mobile{
+        display: none;
+    }
+}

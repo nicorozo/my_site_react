@@ -12,15 +12,24 @@ import Footer from "../components/Footer/Footer";
 import Services from "../components/Services/Services";
 import NavbarMenu from "../components/navbar/NavbarMenu";
 import NavbarButton from "../components/navbar/NavbarButton";
+import Modal from "../utils/Modal/Modal";
+import { useState } from "react";
 
 function App() {
+  const [isModal, setIsModal] = useState(false);
+
+  const activateModal = () => {
+    setIsModal(!isModal);
+    console.log("isModal", isModal);
+  };
+
   return (
     <div className="app">
       <div className="hero-background home"></div>
       <Nabvar>
         <Logo />
         <NavbarMenu />
-        <NavbarButton />
+        <NavbarButton handleMenuOpen={activateModal} isModal={isModal} />
       </Nabvar>
       <Hero>
         <div className="hero-text-div">
@@ -55,6 +64,7 @@ function App() {
       {/*  <Billboard /> */}
       <div className="spacer"></div>
       <Footer />
+      {isModal && <Modal />}
     </div>
   );
 }

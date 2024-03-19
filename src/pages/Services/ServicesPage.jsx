@@ -38,7 +38,10 @@ const ServicesPage = () => {
       </Nabvar>
       <Hero>
         <div className="hero-text-div services">
-          <h1>From creatives to creatives</h1>
+          <h1>
+            From creatives
+            <br /> to creatives
+          </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique.{" "}
