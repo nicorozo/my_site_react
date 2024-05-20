@@ -33,10 +33,10 @@ function App() {
       </Nabvar>
       <Hero>
         <div className="hero-text-div">
-          <h1>We create your Websites</h1>
+          <h1>Building Custom Websites for You</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique.{" "}
+            varius enim in eros elementum tristique.
           </p>
           <div className="hero-action-div">
             <button className="hero-btn blue">
