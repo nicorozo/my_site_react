@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     color: white;
+    gap: 3rem;
 }
 .hero-text-changing-word{
     animation: none;
@@ -34,7 +35,7 @@
     text-align: end;
 }
 .hero-btn.blue{
-    background-color: var(--blue-button);
+    background-color: transparent;
     color: white;
 }
 

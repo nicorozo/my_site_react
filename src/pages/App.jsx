@@ -64,9 +64,9 @@ function App() {
           </p> */}
           <div className="hero-action-div">
             <button className="hero-btn blue">
-              Button <FaArrowCircleRight />
+              Explore <FaArrowCircleRight />
             </button>
-            <button className="hero-btn">Button</button>
+            {/* <button className="hero-btn">Button</button> */}
           </div>
         </div>
       </Hero>
