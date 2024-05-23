@@ -17,15 +17,34 @@ import { useState } from "react";
 
 function App() {
   const [isModal, setIsModal] = useState(false);
+  const [introWordIndex, setIntroWordIndex] = useState(0);
+  const [introWordClass, setIntroWordClass] = useState("");
 
   const activateModal = () => {
     setIsModal(!isModal);
     console.log("isModal", isModal);
   };
 
+  const introWordsArray = [
+    "your business",
+    "your products",
+    "your ideas",
+    "your projects",
+    "you",
+  ];
+  setTimeout(function () {
+    setIntroWordClass("");
+    if (introWordIndex === 4) {
+      setIntroWordIndex(0);
+    } else setIntroWordIndex(introWordIndex + 1);
+    setIntroWordClass("active");
+  }, 3000);
+
   return (
     <div className="app">
-      <div className="hero-background home"></div>
+      <div className="hero-background home">
+        <video src="Background.mp4" autoPlay muted loop></video>
+      </div>
       <Nabvar>
         <Logo />
         <NavbarMenu />
@@ -33,11 +52,16 @@ function App() {
       </Nabvar>
       <Hero>
         <div className="hero-text-div">
-          <h1>Building Custom Websites for You</h1>
-          <p>
+          <h1>
+            The best Web Solutions for <br /> {/* still to fix animation */}
+            <span className={`hero-text-changing-word ${introWordClass}`}>
+              {introWordsArray[introWordIndex]}
+            </span>
+          </h1>
+          {/* <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique.
-          </p>
+          </p> */}
           <div className="hero-action-div">
             <button className="hero-btn blue">
               Button <FaArrowCircleRight />

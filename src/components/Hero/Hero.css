@@ -12,6 +12,17 @@
     align-items: center;
     color: white;
 }
+.hero-text-changing-word{
+    animation: none;
+}
+.hero-text-changing-word.active{
+    font-style: italic;
+    animation:wordChanger 3s ease-in  ;
+}
+@keyframes wordChanger {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
 .hero-action-div{
     display: flex;
