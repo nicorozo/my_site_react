@@ -10,11 +10,11 @@ const HalfAction = () => {
         className="half-video"
       ></video>
       <div className="half-text-div">
-        <h3>This is what we do</h3>
-        <p>
+        <h3>More About Us</h3>
+        {/* <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           varius enim in eros elementum tristique.
-        </p>
+        </p> */}
         <div className="half-buttons-div">
           <button className="half-button action">Action</button>
           <button className="half-button info">More Info</button>

@@ -8,7 +8,7 @@ const Services = () => {
       <div className="services-inner-container">
         <div className="services-heading">
           <h3>Services</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
         </div>
         <div className="services-content-container">
           {/* 
@@ -18,10 +18,10 @@ const Services = () => {
             <ServicesCard setImage={"card-picture1.jpg"} classImage={"first"}>
               <ServicesCardText
                 color={"yellow"}
-                tagline={"tagline"}
-                headline={"headline"}
+                tagline={"(Wolno)"}
+                headline={"Web Development"}
                 text={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+                  "E-commerce Websites, Business Websites, Blogs, Portfolio Websites, Educational Websites, Landing Pages"
                 }
               ></ServicesCardText>
             </ServicesCard>
@@ -30,9 +30,11 @@ const Services = () => {
             */}
             <ServicesCardText
               color={"white"}
-              tagline={"tagline"}
-              headline={"headline"}
-              text={"sometext"}
+              tagline={"(Wolno - Poland)"}
+              headline={"Photography"}
+              text={
+                "Advertising Photography, Product Photography, Architectural Photography, Product Photography, Food Photography"
+              }
             ></ServicesCardText>
           </div>
           {/* 
@@ -42,24 +44,24 @@ const Services = () => {
             <div className="services-column-div mobile">
               <ServicesCardText
                 color={"white"}
-                tagline={"tagline"}
-                headline={"headline"}
+                tagline={"(Wolno)"}
+                headline={"Content Creation"}
                 text={"sometext"}
               ></ServicesCardText>
               <ServicesCardText
                 color={"white"}
-                tagline={"tagline"}
-                headline={"headline"}
+                tagline={"(Wolno)"}
+                headline={"SEO"}
                 text={"sometext"}
               ></ServicesCardText>
             </div>
             <ServicesCard setImage={"card-picture2.jpg"} classImage={"first"}>
               <ServicesCardText
                 color={"yellow"}
-                tagline={"tagline 2"}
-                headline={"headline 2"}
+                tagline={"(Wolno)"}
+                headline={"Design"}
                 text={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+                  "intuitive navigation and visual appeal, Selecting colors that reflect brand identity, engage users, and enhance the overall design "
                 }
               ></ServicesCardText>
             </ServicesCard>
