@@ -1,31 +1,30 @@
 export const data = [
   {
     id: 1,
-    name: "Feature 1",
-    header: "Busco Diseñadores!",
-    text: "Hola, mi nombre es Nicolas, soy desarrollador web Front-End. Busco diseñadores que estén abiertos a hacer colaboraciones para paginas web con la oportunidad de ver su trabajo en vivo/online    ",
-    img:'frame16.png'
+    name: "Your Web Needs, Our Solutions",
+    header: "Your Web Needs, Our Solutions",
+    text: "At Wolno, we understand that every business is unique, and so are your web development needs. Whether you're looking to build a new website from scratch, revamp an existing site, or need ongoing support and maintenance, our team of experts is here to help.  ",
+    img: "frame16.png",
   },
   {
     id: 2,
-    name: "Feature 1",
-    header: "Apasionados, locos y creativos!",
-    text: "La idea es crear un pequeño grupo (5-10 personas) con diferentes talentos y estilos artisticos que quieran mostrar su trabajo y talento... Con libertad de creacion!",
-    img:'frame16.png'
+    name: "We Find the Best Option for You",
+    header: "We Find the Best Option for You",
+    text: "We tailor our web development solutions to meet your specific needs. Powerful and scalable applications with React, or a versatile and user-friendly platform with WordPress, we've got you covered. ",
+    img: "frame16.png",
   },
   {
     id: 3,
-    name: "Feature 1",
-    header: "Cómo sería mi perro!",
-    text: "Que estás ampliando tu portafolio de diseño UX/UI para subirlo a Behance... Ok, porque no además hacerlo parte de una página web real y que te dé crédito (link a tu portafolio), una ventana más para mostrar tu trabajo",    img:'frame16.png'
+    name: "Custom Design",
+    header: "Custom Design",
+    text: " We craft custom designs that fit your style and budget perfectly. Need a simple, affordable design to get started? We’ve got you covered. Want something more complex and eye-catching? We can do that too.",
+    img: "frame16.png",
   },
   {
-    id: 4
-    ,
-    name: "Feature 1",
-    header: "Me interesa pero soy timid@",
-    text: "Si leiste todo eso y aun asi te interesa, enviame una muestra de tu trabajo al DM =)",
-    img:'frame16.png'
+    id: 4,
+    name: "Your Image",
+    header: "Your Website Working for You",
+    text: "We create and maintain websites that drive your business forward. From launch to ongoing updates, we ensure your site adapts to market changes and stays effective. Let your website work as hard as you do!",
+    img: "frame16.png",
   },
 ];
-

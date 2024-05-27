@@ -42,35 +42,41 @@ function App() {
 
   return (
     <div className="app">
-      <div className="hero-background home">
-        <video src="Background.mp4" autoPlay muted loop></video>
-      </div>
-      <Nabvar>
-        <Logo />
-        <NavbarMenu />
-        <NavbarButton handleMenuOpen={activateModal} isModal={isModal} />
-      </Nabvar>
-      <Hero>
-        <div className="hero-text-div">
-          <h1>
-            The best Web Solutions for <br /> {/* still to fix animation */}
-            <span className={`hero-text-changing-word ${introWordClass}`}>
-              {introWordsArray[introWordIndex]}
-            </span>
-          </h1>
-          {/* <p>
+      <section className="hero-main-section">
+        <div className="hero-background home"></div>
+        <video
+          className="hero-background video"
+          src="Background.mp4"
+          autoPlay
+          muted
+          loop
+        ></video>
+        <Nabvar>
+          <Logo />
+          <NavbarMenu />
+          <NavbarButton handleMenuOpen={activateModal} isModal={isModal} />
+        </Nabvar>
+        <Hero>
+          <div className="hero-text-div">
+            <h1>
+              The best Web Solutions for <br /> {/* still to fix animation */}
+              <span className={`hero-text-changing-word ${introWordClass}`}>
+                {introWordsArray[introWordIndex]}
+              </span>
+            </h1>
+            {/* <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique.
           </p> */}
-          <div className="hero-action-div">
-            <button className="hero-btn blue">
-              Explore <FaArrowCircleRight />
-            </button>
-            {/* <button className="hero-btn">Button</button> */}
+            <div className="hero-action-div">
+              <button className="hero-btn blue">
+                Explore <FaArrowCircleRight />
+              </button>
+              {/* <button className="hero-btn">Button</button> */}
+            </div>
           </div>
-        </div>
-      </Hero>
-      <h2 className="h2-light">Used by the world's most average companies</h2>
+        </Hero>
+      </section>
       <AutoplayCarousel></AutoplayCarousel>
       <div className="process-headline-container">
         <h2 className="process-h2">Process</h2>

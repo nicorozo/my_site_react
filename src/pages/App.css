@@ -7,19 +7,29 @@
 .app{
   padding: 0 4rem;
 }
+.hero-main-section{
+  height: 100vh;
+  margin-bottom: 10rem;
+
+}
 .hero-background{
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .hero-background.home{
   background-image: url(heroImg.png);
+}
+.hero-background.video{
+  display: flex;
+  object-fit: cover;
+  border-bottom: 10px solid rgba(38, 235, 202, 0.267);
 }
 /* Buttons */
 button {
