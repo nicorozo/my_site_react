@@ -12,11 +12,11 @@ function ProcessCard({ card, isOpen, onClick }) {
         <h3>{card.name}</h3>
       </div>
       <div className={`process-card-content ${isOpen ? "active" : ""}`}>
-        <img src={card.img} className="process-card-img" />
         <div className="process-card-text">
           <h3>{card.header}</h3>
           <p>{card.text}</p>
         </div>
+        <img src={card.img} className="process-card-img" />
       </div>
     </button>
   );
