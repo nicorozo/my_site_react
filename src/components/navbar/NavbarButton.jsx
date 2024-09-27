@@ -1,6 +1,5 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
-import { useState } from "react";
 
 const NavbarButton = ({ handleMenuOpen, isModal }) => {
   return (

@@ -57,10 +57,14 @@
     }
   }
   @media only screen and (max-width:800px) {
+    .carousel-gap{
+      display: none;
+    }
     .carousel-track{
         display: none;
     }
     .carousel-track.mobile{
-      display: flex;
+      display: none;
     }
+    
 }
